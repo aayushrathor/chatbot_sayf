@@ -1,0 +1,56 @@
+{
+    "intents": [
+        {
+            "displayName": "SayF",
+            "trainingPhrases": [
+                "What is SayF?",
+                "Is KYC required to start saving?",
+                "How to create a SayF account?",
+                "Do I need a bank account to start?",
+                "Is SayF secure?",
+                "Is there any interest charged or fees for using SayF?"
+            ],
+            "messageTexts": [
+                "SayF is an app that helps you save & invest better on every spend.",
+                "KYC verification is not required to start saving with SayF. A one-step new user sign in lets you start investing in digital gold with SayF in less than 30 seconds.",
+                "SayF is available on Android mobile devices. Simply type SayF in the search bar to find & install the app in a few seconds. To create a SayF account, enter your phone number. Use your PhonePe, or Paytm account to set up UPI auto-save. Allow SayF to save money for you every day at the greatest gold rate. To sell gold that has been collected in your SayF account and get money immediately into your bank account, use the 'Withdraw money' option.",
+                "Yes, you need to have a bank/Any UPI account so that you can transfer your savings  to your bank. Your savings are safe in your SayF Account till you transfer it to your bank account.",
+                "The SayF app is completely safe and secure to use for your daily gold savings, investments & partner store purchases. Augmont Gold powers it, and all transactions are 100% safe and secured in Sequel Vaults monitored by SEBI registered IDBI trusteeship. As a result, investing via the SayF app is safer. Your savings will always be yours. You have complete control over your money; just click a button to halt, restart, or withdraw Gold.",
+                "There is absolutely no interest and zero fees when using SayF."
+            ]
+        },
+        {
+            "displayName": "DailySaving",
+            "trainingPhrases": [
+                "how to set up autopay",
+                "how to set up daily savings",
+                "what is daily savings",
+                "what is autopay",
+                "what is upi autosave",
+                "how does UPI autosave work"
+            ],
+            "messageTexts": [
+                "To set up Daily Savings, click on the 'Daily Savings' icon on the home screen and enter the amount you want to invest each day. You may deposit anywhere between Rs. 10 to Rs. 500, which will be deducted from your bank account and invested on a daily basis. If you want to change the amount of your daily savings, go to the 'Daily Savings' option on your dashboard and enter the new amount.",
+                "To set up Auto-Pay on SayF, follow these instructions:\n1. On your home screen, click activate your Auto-save option.\n2. Understand how UPI autosave helps you save through a video.\n3. Select the UPI app.\n4. Buy the gold for Rs.1 using your UPI PIN. Your SayF Autosave is set up after the payment is successful & you get the Rs.1 gold invested in your SayF portfolio.",
+                "The UPI autosave function enables SayF to provide your bank a standing order to debit a predefined amount from your account on a regular basis. SayF allows you to set up auto-save up to Rs. 500."
+            ]
+        },
+        {
+            "displayName": "DigitalGold",
+            "trainingPhrases": [
+                "What is digital gold?",
+                "Where is my gold saved?",
+                "When can I withdraw savings?",
+                "Why is gold better than mutual funds?",
+                "Can I redeem my Digital Gold balance for Jewellery?"
+            ],
+            "messageTexts": [
+                "Digital gold is real gold that’s simply stored virtually to provide safety, and can be bought or converted into physical gold conveniently with the click of a button.",
+                "It is kept 100% safe and secured in Sequel Vaults monitored by SEBI registered IDBI trusteeship.",
+                "You can withdraw your money after 24 hours of investment. There is no minimum lock in period.",
+                "Gold is historically safe, stable, and more likely to resist market fluctuations than any other financial instruments available for investment. It is a commodity that has retained its value over long periods of time and is trusted by millions of Indians everyday.",
+                "To exchange your Digital Gold balance for jewellery, you need to visit your nearest Kalyan Jewellers branch. Select the jewellery you want to purchase (gold chain, gold ring, set, etc.). During the payment process, you need to inform the executive that the payment will be made with your Digital Gold balance. The executive will check the details by entering your credentials and will inform you of the Gold balance available. Upon confirmation from you, an OTP will be sent to your mobile number and a transaction will be initiated for the product. Post purchase, your Digital Gold balance will be updated with the debit transaction and you will receive an invoice for the transaction from Kalyan Jewellers."
+            ]
+        }
+    ]
+}
