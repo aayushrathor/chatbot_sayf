@@ -1,6 +1,4 @@
-## chatbot
-
-## Description
+## Chatbot
 
 > Chatbot is developed using Dialogflow and NestJs, which serves as a customer support agent. In addition to these technologies, the chatbot also utilizes OpenAI's ChatGPT API for consultation. 
 
@@ -52,6 +50,9 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+# docker
+$ docker-compose up
 ```
 
 ## API EndPoints
@@ -63,3 +64,18 @@ $ npm run start:prod
 | /intents/list-intents  | GET        | Lists all Dialogflow intents.                                     |
 | /intents/create-intents| POST       | Creates a new Dialogflow intent.                                  |
 
+
+## dialogflow
+```bash
+# gcloud auth
+$ gcloud auth login
+$ gcloud auth application-default login
+$ gcloud auth application-default set-quota-project <PROJECT_ID>
+```
+
+
+## References
+
+- [Dialogflow](https://cloud.google.com/dialogflow/es/docs/quick)
+- [OpenAI ChatGPT](https://platform.openai.com/docs/api-reference/introduction)
+- [Dialogflow and ChatGPT integration](https://blog.botcopy.com/dialogflow-chatgpt-7becde45f008)
