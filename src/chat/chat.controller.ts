@@ -14,7 +14,7 @@ export class ChatController {
         const dialogflowResponse = await this.chatService.detectIntentText(message);
         const intent = dialogflowResponse.intent;
 
-        if (intent === "chat_gpt_reponse") {
+        if (intent === "Default Fallback Intent") {
             const chatgptResponse = await this.openaiService.completion(message);
             return {
                 responseBy: "chatgpt",
@@ -22,7 +22,7 @@ export class ChatController {
                 response: chatgptResponse,
             }
         }
-
+        
         return {
             responseBy: "dialogflow",
             message: message,
