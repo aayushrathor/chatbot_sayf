@@ -97,6 +97,247 @@
             "messageTexts": [
                 "The UPI autosave function enables SayF to provide your bank a standing order to debit a predefined amount from your account on a regular basis. SayF allows you to set up auto-save up to Rs. 500."
             ]
+        },
+        {
+            "displayName": "DigitalGoldInfo",
+            "trainingPhrases": [
+                "What is digital gold?",
+                "Tell me about digital gold",
+                "What exactly is digital gold?"
+            ],
+            "messageTexts": [
+                "Digital gold is real gold that’s simply stored virtually to provide safety, and can be bought or converted into physical gold conveniently with the click of a button."
+            ]
+        },
+        {
+            "displayName": "GoldSavingLocation",
+            "trainingPhrases": [
+                "Where is my gold saved?",
+                "Where exactly is my gold stored?",
+                "Can you tell me where my gold is kept?"
+            ],
+            "messageTexts": [
+                "It is kept 100% safe and secured in Sequel Vaults monitored by SEBI registered IDBI trusteeship."
+            ]
+        },
+        {
+            "displayName": "GoldWithdrawal",
+            "trainingPhrases": [
+                "When can I withdraw savings?",
+                "How soon can I withdraw my gold savings?",
+                "Is there a minimum lock-in period for withdrawing my gold?"
+            ],
+            "messageTexts": [
+                "You can withdraw your money after 24 hours of investment. There is no minimum lock in period."
+            ]
+        },
+        {
+            "displayName": "GoldVsMutualFunds",
+            "trainingPhrases": [
+                "Why is gold better than mutual funds?",
+                "What makes gold a better investment than mutual funds?",
+                "Can you tell me the advantages of investing in gold over mutual funds?"
+            ],
+            "messageTexts": [
+                "Gold is historically safe, stable, and more likely to resist market fluctuations than any other financial instruments available for investment. It is a commodity that has retained its value over long periods of time and is trusted by millions of Indians everyday."
+            ]
+        },
+        {
+            "displayName": "GoldToJewellery",
+            "trainingPhrases": [
+                "Can I redeem my Digital Gold balance for Jewellery?",
+                "Is it possible to exchange my Digital Gold balance for jewellery?",
+                "How can I use my Digital Gold balance to purchase jewellery?"
+            ],
+            "messageTexts": [
+                "To exchange your Digital Gold balance for jewellery, you need to visit your nearest Kalyan Jewellers branch. Select the jewellery you want to purchase (gold chain, gold ring, set, etc.). During the payment process, you need to inform the executive that the payment will be made with your Digital Gold balance. The executive will check the details by entering your credentials and will inform you of the Gold balance available. Upon confirmation from you, an OTP will be sent to your mobile number and a transaction will be initiated for the product. Post purchase, your Digital Gold balance will be updated with the debit transaction and you will receive an invoice for the transaction from Kalyan Jewellers."
+            ]
+        },
+        {
+            "displayName": "SayFGoldback",
+            "trainingPhrases": [
+                "How does SayF goldback work?",
+                "What is SayF goldback?",
+                "How to earn goldback on SayF?",
+                "Can you explain how SayF goldback works?",
+                "How can I get goldback on SayF?"
+            ],
+            "messageTexts": [
+                "SayF Goldback is earned every time you shop at any of our partner stores. Simply search for the brand in the 'Stores' section of the app, enter the bill amount, and pay using UPI or SayF Pay Later. Share your card number and PIN during checkout or to the cashier to get the goldback. You can see your earnings in the 'My Rewards' section on the home screen."
+            ]
+        },
+        {
+            "displayName": "Affordability",
+            "trainingPhrases": [
+                "How can SayF afford to give away gold?",
+                "How does SayF make money?",
+                "Why does SayF give goldback?",
+                "What is the business model of SayF?"
+            ],
+            "messageTexts": [
+                "SayF has over 400+ partner brands, and every time a SayF customer shops from these partner brands, SayF gets commission. Most of this commission is paid back to the customer as Real Goldback."
+            ]
+        },
+        {
+            "displayName": "CheckGoldback",
+            "trainingPhrases": [
+                "Where can I find out how much goldback I've received?",
+                "How to check my goldback rewards?",
+                "Is there a way to check my goldback?",
+                "Can I know how much goldback I have?",
+                "How do I find out how much goldback I have earned?"
+            ],
+            "messageTexts": [
+                "You can see your earnings in the 'My Rewards' section on the home screen."
+            ]
+        },
+        {
+            "displayName": "NoGoldback",
+            "trainingPhrases": [
+                "Is it possible to get goldback without using SayF?",
+                "Can I earn goldback without using SayF?",
+                "How can I get goldback without using SayF?",
+                "Do I need to use SayF to earn goldback?",
+                "Can I get goldback without sharing my card number and PIN?"
+            ],
+            "messageTexts": [
+                "No, in order to avail goldback you need to pay through SayF and use the card number and PIN in checkout to get the goldback."
+            ]
+        },
+        {
+            "displayName": "PayThroughSayF",
+            "trainingPhrases": [
+                "How to pay through SayF?",
+                "Can you explain the payment process in SayF?",
+                "What are the payment options in SayF?",
+                "How to make payments using SayF?",
+                "Can I use SayF Pay Later to pay?"
+            ],
+            "messageTexts": [
+                "In order to pay through SayF, you can click on the scan button on the home screen and scan and pay either via your UPI or SayF Pay Later."
+            ]
+        },
+        {
+            "displayName": "GoldbackExpiry",
+            "trainingPhrases": [
+                "Is there any expiry for my Goldback/Rewards?",
+                "Do my goldback rewards expire?",
+                "What is the validity of my goldback rewards?",
+                "How long are my goldback rewards valid for?",
+                "Do I need to use my goldback rewards before they expire?"
+            ],
+            "messageTexts": [
+                "No, there is no expiry for your Goldback Rewards.  Just find them in my rewards section and redeem them."
+            ]
+        },
+        {
+            "displayName": "SayfDownload",
+            "trainingPhrases": [
+                "Where can I use SayF?",
+                "Can you tell me where I can use SayF?"
+            ],
+            "messageTexts": [
+                "We have a number of great retail merchant partners where you can buy now and pay later, have a look at our store directory for a full list. If you see a store that doesn’t have SayF, feel free to reach out and ask if you can add SayF - we’ve seen a lot of success when customers reach out directly!"
+            ]
+        },
+        {
+            "displayName": "Contact Support",
+            "trainingPhrases": [
+                "How can I contact SayF's support team?",
+                "What are the ways to reach SayF's support team?",
+                "How to get in touch with SayF's customer service?"
+            ],
+            "messageTexts": [
+                "You can contact SayF's support team through the following ways:\n\n1. Help button: Click on the help button on SayF's app & select the 'WhatsApp Us' button to text us on WhatsApp. We will reply within 24 hours.\n\n2. Social Media: You can send us a message on Twitter or Instagram.",
+                "connect on twitter: https://twitter.com/sayfinvest\nconnect on instagram: https://www.instagram.com/sayfinvest/"
+            ]
+        },
+        {
+            "displayName": "Referral Program",
+            "trainingPhrases": [
+                "How can I refer my friends to SayF?",
+                "What is SayF's referral program?",
+                "What is the procedure for claiming the referral bonus?"
+            ],
+            "messageTexts": [
+                "To refer your friends/family to SayF, follow these steps:\n\n1. Click on 'My Account'/'Profile'\n2. Go to 'Refer and Earn'\n3. Share your referral link with your friends/family.\n\nTo claim the referral bonus, check whether you and your referral partners' autopay is activated. Then, go to the 'My Rewards' tab on the home page to collect your referral incentive. Once the person you referred installs the app and their autopay is set up, you will receive a scratch card in the 'My Rewards' section that you can claim for the referral prize."
+            ]
+        },
+        {
+            "displayName": "Referral Bonus Time",
+            "trainingPhrases": [
+                "How long does it take for referral bonuses to show up in my account?",
+                "When will I receive my referral bonus?"
+            ],
+            "messageTexts": [
+                "Once the person you referred installs the App and their Autopay has been properly arranged, you'll get a scratch card in the 'My Rewards' section that you can claim for the referral prize."
+            ]
+        },
+        {
+            "displayName": "Difference from other apps",
+            "trainingPhrases": [
+                "Why is SayF different from other apps?",
+                "What makes SayF unique?",
+                "How is SayF different from other finance apps?"
+            ],
+            "messageTexts": [
+                "SayF is different from other apps because it offers 24k digital gold investment back on every purchase from partner brands, in addition to helping you save and invest your money for a better future."
+            ]
+        },
+        {
+            "displayName": "Benefits of SayF",
+            "trainingPhrases": [
+                "How much will I benefit from SayF?",
+                "What benefits does SayF offer?",
+                "What can I get from SayF?"
+            ],
+            "messageTexts": [
+                "SayF helps you save and invest your money, and offers instant guaranteed investment back on every purchase in the form of digital gold invested into your SayF portfolio. Additionally, SayF rounds up your loose change on every UPI payment and invests it."
+            ]
+        },
+        {
+            "displayName": "Eligibility to invest",
+            "trainingPhrases": [
+                "Who can invest with SayF?",
+                "What are the eligibility criteria to invest with SayF?",
+                "Can anyone invest with SayF?"
+            ],
+            "messageTexts": [
+                "Any Indian citizen over the age of 18 that banks with SayF supported banks and owns a UPI account can start investing with SayF in less than 45 seconds."
+            ]
+        },
+        {
+            "displayName": "Supported banks for gold purchases",
+            "trainingPhrases": [
+                "Which banks are supported for Gold purchases on SayF?",
+                "Can I buy gold on SayF using any bank account?",
+                "What are the banks that support gold purchases on SayF?"
+            ],
+            "messageTexts": [
+                "All the major banks are supported for Gold purchases on SayF, including Federal Bank, Canara Bank, ICICI, Bank of Baroda, and 30+ others. You can find the list of the supported banks on SayF's website."
+            ]
+        },
+        {
+            "displayName": "Data privacy and security",
+            "trainingPhrases": [
+                "Can my data be breached on SayF?",
+                "Is my data secure on SayF?",
+                "How does SayF ensure data privacy?"
+            ],
+            "messageTexts": [
+                "SayF ensures end-to-end encryption on the app and payment channels, and no one, not even SayF, can access or leak your data. Your data is safe and secure with SayF."
+            ]
+        },
+        {
+            "displayName": "Automatic payment failure",
+            "trainingPhrases": [
+                "What happens if the automatic payment fails on SayF?",
+                "My automatic payment failed on SayF, what should I do?",
+                "How can I resolve a failed automatic payment on SayF?"
+            ],
+            "messageTexts": [
+                "If your automatic payment fails on SayF, click on the 'Help' button and reach out to the support team for assistance."
+            ]
         }
     ]
 }
