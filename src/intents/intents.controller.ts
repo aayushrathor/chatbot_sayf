@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Post } from '@nestjs/common';
 import { IntentsService } from './intents.service';
 import * as fs from 'fs';
 
@@ -16,5 +16,10 @@ export class IntentsController {
     @Get('list-intents')
     async listIntents() {
         await this.intentsService.listIntents();
+    }
+
+    @Delete('delete-intents')
+    async deleteIntents(@Body('intentName') intentName: string) {
+        await this.intentsService.deleteIntent(intentName);
     }
 }

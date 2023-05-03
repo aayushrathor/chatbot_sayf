@@ -72,4 +72,12 @@ export class IntentsService {
             });
         });
     }
+
+    async deleteIntent(intentName: string) {
+        const request = {
+            name: intentName
+        };
+        await this.intentsClient.deleteIntent(request);
+        console.log(`Intent ${intentName} deleted`);
+    }
 }
