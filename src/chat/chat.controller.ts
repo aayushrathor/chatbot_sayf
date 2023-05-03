@@ -14,16 +14,17 @@ export class ChatController {
         const dialogflowResponse = await this.chatService.detectIntentText(message);
         const intent = dialogflowResponse.intent;
 
-        if (intent === 'chat_gpt_response') {
-            const chatgptPrompt = dialogflowResponse.fields.chatgptprompt.stringValue;
-            const chatgptResponse = await this.openaiService.completion(chatgptPrompt);
+        if (intent === "chat_gpt_reponse") {
+            const chatgptResponse = await this.openaiService.completion(message);
             return {
+                responseBy: "chatgpt",
                 message: message,
                 response: chatgptResponse,
             }
         }
 
         return {
+            responseBy: "dialogflow",
             message: message,
             response: dialogflowResponse,
         }

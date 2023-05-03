@@ -65,7 +65,7 @@ $ docker-compose up
 | /intents/create-intents| POST       | Creates a new Dialogflow intent.                                  |
 
 
-## dialogflow
+## Dialogflow
 ```bash
 # gcloud auth
 $ gcloud auth login
@@ -73,9 +73,13 @@ $ gcloud auth application-default login
 $ gcloud auth application-default set-quota-project <PROJECT_ID>
 ```
 
-
 ## References
 
 - [Dialogflow](https://cloud.google.com/dialogflow/es/docs/quick)
 - [OpenAI ChatGPT](https://platform.openai.com/docs/api-reference/introduction)
 - [Dialogflow and ChatGPT integration](https://blog.botcopy.com/dialogflow-chatgpt-7becde45f008)
+
+
+## License
+
+![MIT licensed](https://img.shields.io/github/license/aayushrathor/chatbot_sayf?style=for-the-badge).
