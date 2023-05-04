@@ -10,16 +10,16 @@ export class IntentsController {
 
     @Post('create-intents')
     async createIntents() {
-        await this.intentsService.createIntentsFromJson(this.intents.intents);
+        return await this.intentsService.createIntentsFromJson(this.intents.intents);
     }
 
     @Get('list-intents')
     async listIntents() {
-        await this.intentsService.listIntents();
+        return await this.intentsService.listIntents();
     }
 
     @Delete('delete-intents')
     async deleteIntents(@Body('intentName') intentName: string) {
-        await this.intentsService.deleteIntent(intentName);
+        return await this.intentsService.deleteIntent(intentName);
     }
 }

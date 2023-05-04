@@ -10,7 +10,7 @@ export class IntentsService {
 
     private agentPath = this.intentsClient.projectAgentPath(process.env.GOOGLE_DIALOGFLOW_PROJECT_ID);
 
-    async createIntent(intent: any) {
+    async createIntent(intent: any) : Promise<any> {
 
         const trainingPhrasesParts = intent.trainingPhrases.map((phrase: string) => ({
             type: 'EXAMPLE',
@@ -33,10 +33,8 @@ export class IntentsService {
             parent: this.agentPath,
             intent: intentData
         };
-        console.log("createIntentRequest: ", createIntentRequest)
 
         const [responses] = await this.intentsClient.createIntent(createIntentRequest);
-        console.log('Intent created: \n');
         return responses;
     }
 
@@ -46,38 +44,38 @@ export class IntentsService {
         }
     }
 
-    async listIntents() {
+    async listIntents() : Promise<any> {
         const request = {
             parent: this.agentPath
         }
 
-        const [response] = await this.intentsClient.listIntents(request);
-        response.forEach(intent => {
-            console.log('==============================');
-            console.log(`Intent name: ${intent.name}`);
-            console.log(`Intent display name: ${intent.displayName}`);
-            console.log(`Message: ${intent.messages[0].text.text[0]}`)
-            console.log(`Action: ${intent.action}`);
-            console.log(`Root folowup intent: ${intent.rootFollowupIntentName}`);
-            console.log(`Parent followup intent: ${intent.parentFollowupIntentName}`);
+        const response = await this.intentsClient.listIntents(request);
+        const responseJson = response[0].map((intent: any) => {
+            return {
+                name: intent.name,
+                displayName: intent.displayName,
+                messages: intent.messages[0],
+                action: intent.action,
+                rootFollowupIntentName: intent.rootFollowupIntentName,
+                parentFollowupIntentName: intent.parentFollowupIntentName,
+                inputContextNames: intent.inputContextNames,
+                outputContexts: intent.outputContexts
+            }
+        })
 
-            console.log('Input contexts:');
-            intent.inputContextNames.forEach(inputContextName => {
-                console.log(`\tName: ${inputContextName}`);
-            });
-
-            console.log('Output contexts:');
-            intent.outputContexts.forEach(outputContext => {
-                console.log(`\tName: ${outputContext.name}`);
-            });
-        });
+        return {
+            intents: responseJson
+        };
     }
 
-    async deleteIntent(intentName: string) {
+    async deleteIntent(intentName: string) : Promise<any> {
         const request = {
             name: intentName
         };
         await this.intentsClient.deleteIntent(request);
-        console.log(`Intent ${intentName} deleted`);
+        return {
+            message: "Intent Deleted",
+            intent: intentName
+        }
     }
 }
