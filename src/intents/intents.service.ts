@@ -36,16 +36,21 @@ export class IntentsService {
         };
 
         const [responses] = await this.intentsClient.createIntent(createIntentRequest);
+
         return {
             displayName: responses.displayName,
-            messages: responses.messages
+            trainingPhrases: responses.trainingPhrases,
+            messages: responses.messages[0].text
         };
     }
 
     async createIntentsFromJson(intents: any[]) {
+        const createdIntents = []
         for (const intent of intents) {
-            await this.createIntent(intent);
+            const createIntent = await this.createIntent(intent);
+            createdIntents.push(createIntent)
         }
+        return createdIntents
     }
 
     async listIntents(): Promise<ListIntentsInterface> {
