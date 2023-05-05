@@ -7,10 +7,10 @@ export class ChatController {
     constructor(
         private readonly chatService: ChatService,
         private readonly openaiService: OpenaiService
-    ) {}
+    ) { }
 
     @Get()
-    async handleChat(@Body('message') message: string) {
+    async handleChat(@Body('message') message: string): Promise<any> {
         const dialogflowResponse = await this.chatService.detectIntentText(message);
         const intent = dialogflowResponse.intent;
 
@@ -22,7 +22,7 @@ export class ChatController {
                 response: chatgptResponse,
             }
         }
-        
+
         return {
             responseBy: "dialogflow",
             message: message,

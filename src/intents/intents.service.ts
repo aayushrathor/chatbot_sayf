@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import * as dialogflow from '@google-cloud/dialogflow';
+import { DeleteIntentsInterface, ListIntentsInterface } from './intents.interface';
 
 @Injectable()
 export class IntentsService {
@@ -10,7 +11,7 @@ export class IntentsService {
 
     private agentPath = this.intentsClient.projectAgentPath(process.env.GOOGLE_DIALOGFLOW_PROJECT_ID);
 
-    async createIntent(intent: any) : Promise<any> {
+    async createIntent(intent: any): Promise<any> {
 
         const trainingPhrasesParts = intent.trainingPhrases.map((phrase: string) => ({
             type: 'EXAMPLE',
@@ -35,7 +36,10 @@ export class IntentsService {
         };
 
         const [responses] = await this.intentsClient.createIntent(createIntentRequest);
-        return responses;
+        return {
+            displayName: responses.displayName,
+            messages: responses.messages
+        };
     }
 
     async createIntentsFromJson(intents: any[]) {
@@ -44,7 +48,7 @@ export class IntentsService {
         }
     }
 
-    async listIntents() : Promise<any> {
+    async listIntents(): Promise<ListIntentsInterface> {
         const request = {
             parent: this.agentPath
         }
@@ -68,7 +72,7 @@ export class IntentsService {
         };
     }
 
-    async deleteIntent(intentName: string) : Promise<any> {
+    async deleteIntent(intentName: string): Promise<DeleteIntentsInterface> {
         const request = {
             name: intentName
         };

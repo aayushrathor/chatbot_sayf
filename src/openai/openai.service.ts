@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 import * as dotenv from 'dotenv';
+import { OpenaiCompletionInterface } from './openai.interface';
 
 dotenv.config();
 
@@ -8,7 +9,7 @@ dotenv.config();
 export class OpenaiService {
     private openaiurl = "https://api.openai.com/v1/chat/completions"
 
-    async completion(prompt: string): Promise<any> {
+    async completion(prompt: string): Promise<OpenaiCompletionInterface> {
         const response = await axios.post(this.openaiurl, {
             "model": "gpt-3.5-turbo",
             messages: [{ role: 'user', content: prompt }],

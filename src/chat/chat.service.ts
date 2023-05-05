@@ -3,6 +3,7 @@ import { Storage } from '@google-cloud/storage';
 import { Injectable } from '@nestjs/common';
 import { v4 as uuid } from 'uuid';
 import * as dotenv from 'dotenv';
+import { DetectIntentInterface } from './chat.interface';
 
 dotenv.config();
 
@@ -28,7 +29,7 @@ export class ChatService {
         });
     }
 
-    async detectIntentText(query: string) {
+    async detectIntentText(query: string): Promise<DetectIntentInterface> {
         const sessionID = uuid();
         const sessionPath = this.sessionClient.projectLocationAgentSessionPath(
             this.projectId,
@@ -45,7 +46,7 @@ export class ChatService {
                 },
             }
         };
-        
+
         const [response] = await this.sessionClient.detectIntent(request);
         const result = response.queryResult;
 
