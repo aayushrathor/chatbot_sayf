@@ -1,7 +1,8 @@
-import { Body, Controller, Get } from '@nestjs/common';
+import { Body, CacheTTL, Controller, Get, UseInterceptors } from '@nestjs/common';
 import { ChatService } from './chat.service';
 import { OpenaiService } from 'src/openai/openai.service';
 import { CombinedCompletionInterface } from './chat.interface';
+import { CacheInterceptor } from '@nestjs/cache-manager';
 
 @Controller('chat')
 export class ChatController {
@@ -10,6 +11,8 @@ export class ChatController {
         private readonly openaiService: OpenaiService
     ) { }
 
+    @UseInterceptors(CacheInterceptor)
+    @CacheTTL(600)
     @Get()
     async handleChat(@Body('message') message: string): Promise<CombinedCompletionInterface> {
         const dialogflowResponse = await this.chatService.detectIntentText(message);
