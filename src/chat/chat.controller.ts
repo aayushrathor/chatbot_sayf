@@ -12,7 +12,7 @@ export class ChatController {
     ) { }
 
     @UseInterceptors(CacheInterceptor)
-    @CacheTTL(600)
+    @CacheTTL(1440)
     @Get()
     async handleChat(@Body('message') message: string): Promise<CombinedCompletionInterface> {
         const dialogflowResponse = await this.chatService.detectIntentText(message);
