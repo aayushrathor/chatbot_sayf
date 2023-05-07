@@ -1,3 +1,9 @@
+export interface CreateIntentInterface {
+  displayName: string,
+  trainingPhrases: string[],
+  messageTexts: string[]
+}
+
 export interface ListIntentsInterface {
   intents: {
     name: string,
