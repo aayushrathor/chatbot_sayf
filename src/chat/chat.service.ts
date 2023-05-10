@@ -67,7 +67,7 @@ export class ChatService {
             fields: result.parameters.fields
         }
 
-        await this.cacheService.set(cacheKey, resultToCache)
+        await this.cacheService.set(cacheKey, resultToCache, 0)
         return resultToCache;
     }
 }
